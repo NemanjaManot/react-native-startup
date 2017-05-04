@@ -1,14 +1,102 @@
-# React Native Startup
-## Installation for different OS
+# World Bank demo application
 
 ## Content
-- [About](#about)
+- [World Bank demo application](#world-bank-demo-application)
+- [About React Native](#about-react-native)
 - [Setup and bundling](#setup-and-bundling)
 - [Installation on MAC](#installation-on-mac)
 - [Installation on Windows or Linux](#installation-on-windows-or-linux)
 - [Useful links for learning React Native](#useful-links-for-learning-react-native)
 
-## About
+
+## World Bank demo application
+
+**Architecture**
+
+In the World Bank application logged in users can find appropriate Countries, from a list of the displayed region.
+
+When user chooses region in new scene, he finds  a list of the all countries of that region. User can search desired country by typing in the input box. Also, user can filter which countries he wants to see on the list, by clicking on a button toggle (active/inactive/all countries).
+
+When the user selects a country a new scene starts. In that scene, he can find information about selected country and another toggle button, where he can change activity of a country.
+
+**Application scenes:**
+
+- Log in
+- List of regions
+- List of countries from selected region
+- Selected country
+
+**Structure:**
+
+```
+/src
+    /actions
+        index.js
+        types.js
+    /components
+        /common
+        /ComponentsFolder
+            component files
+            component reducer
+            component action
+    /reducers
+        index.js
+    /sagas
+    /services
+    App.js
+    Router.js
+index.android.js
+index.ios.js
+```
+
+src folder is our main folder. Inside it other folders can be found. Also, there are actions and reduces folders (from Redux). In the components folder we can find different components of our application. In component folder we put all things about that component – separate actions, reducers..
+
+### Dependencies
+
+- [Axios](https://github.com/mzabriskie/axios): Axios is a promise based HTTP client for Node.js and browser. It can work on both client and server. 
+- [React Native Router Flux](https://github.com/aksonov/react-native-router-flux): Router for React Native based on new React Native Navigation API.
+- [Redux Saga](https://github.com/redux-saga/redux-saga): redux-saga is a library that aims to make side effects (i.e. asynchronous things like data fetching and impure things like accessing the browser cache) in React/Redux applications easier and better.
+
+### React Native Components used
+- **AppRegistry** - The JS entry point to running all React Native apps.
+- **Image** - A React component for displaying different types of images, including network images, static resources, temporary local images, and images from local disk, such as the camera roll.
+- **Platform** - A module is provided by React Native to detect what is the platform in which the app is running.
+- **View** - The most fundamental component for building UI, View is a container that supports layout with flexbox, style, some touch handling, and accessibility controls, and is designed to be nested inside other views and to have 0 to many children of any type.
+- **Text** - A React component for displaying text which supports nesting, styling, and touch handling.
+- **TouchableOpacity** - A wrapper for making views respond properly to touches.
+- **TextInput** - A foundational component for inputting text into the app via a keyboard.
+- **ActivityIndicator** - Displays a circular loading indicator.
+- **ScrollView** - Component that wraps platform ScrollView while providing integration with touch locking "responder" system.
+- **ListView** - A core component designed for efficient display of vertically scrolling lists of changing data.
+- **Switch** - This is a controlled component that requires an onValueChange callback that updates the value prop in order for the component to reflect user actions.
+- **TouchableWithoutFeedback** - All the elements that respond to press should have a visual feedback when touched. TouchableWithoutFeedback supports only one child.
+- **Keyboard** - Keyboard module to control keyboard events.
+- **StyleSheet** - A StyleSheet is an abstraction similar to CSS StyleSheets
+
+
+### Running:
+
+First of all – [follow this steps](#installation-on-mac).
+
+**Clone & install**
+
+- Clone this repo
+- `cd projectFolderName`
+- `npm install`
+
+**iOS**
+
+- `react-native run-ios`
+
+**Android**
+
+- Start emulator
+- `react-native start`
+- `react-native run-android`
+
+# React Native Startup - Installation for different OS
+
+## About React Native
 
 ###### Official definition
 > *React Native lets build mobile apps using only JavaScript. It uses the same design as React, letting you compose a rich mobile UI from declarative components.*
@@ -20,7 +108,7 @@ A few simple examples of the differences between React.js and React Native:
  * RN instead of `div` or `p`  use components like `<View>` or `<Text>`
  * RN don't use CSS, we just style our application using JavaScript
  * Instead of routing to different web pages, you are navigating between different scenes of your application, when you use RN
-
+ 
 
 ## Setup and bundling
 
