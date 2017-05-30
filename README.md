@@ -14,7 +14,7 @@
 > *React Native lets build mobile apps using only JavaScript. It uses the same design as React, letting you compose a rich mobile UI from declarative components.*
 
 ###### React.js VS React Native
-React Native is a consequence of React (the library). We are still writing React code, but the framework we are using (React Native) offers additional functionality to run app on iOS or Android. If someone know React, he already know most of React Native.
+React Native is a consequence of React (the library). We are still writing React code, but the framework we are using (React Native) offers additional functionality to run app on iOS or Android. If someone knows React, he already knows most of the React Native.
 
 A few simple examples of the differences between React.js and React Native:
  * RN instead of `div` or `p`  use components like `<View>` or `<Text>`
@@ -64,7 +64,7 @@ cd TestProject
 react-native run-ios
 ```
 
-**NOTE:** If you want to start android device on Mac, you follow [this steps](https://facebook.github.io/react-native/docs/getting-started.html) and/or steps on Windows/Linux instalation (under this) – download, install and setup Android Studio and environment variables.
+**NOTE:** If you want to start android device on Mac, you follow [this steps](https://facebook.github.io/react-native/docs/getting-started.html) and/or steps on Windows/Linux installation (under this) – download, install and setup Android Studio and environment variables.
 
 
 
@@ -93,11 +93,11 @@ react-native run-ios
 
 **7.** Start Android Studio and open your TestProject. Navigate: .../TestProject/android
 
-When project start you probably have some message like this:
+When the project starts you will probably have message like this:
 
 <img src="http://i.imgur.com/eu6119z.jpg"></img>
 
-All you need to do is click that blue text and install some things.
+All you need to do is click that blue text and install needed parts.
 
 After that you have new message and you must to do same thing again – click blue text and install.
 
@@ -160,7 +160,7 @@ After that you have new message and you must to do same thing again – click bl
   react-native run-android
   ```
   
-  **NOTE:** In my case (i working on Linux) after opening emulator and path to my project i must do this steps:
+  **NOTE:** In my case (i am working on Linux) after opening emulator and path to my project these steps must be done:
   ```
   cd TestProject
   react-native start
@@ -171,6 +171,6 @@ After that you have new message and you must to do same thing again – click bl
   ## Useful links for learning React Native
   
   - [React native website](https://facebook.github.io/react-native/docs/tutorial.html): Best resources for React native you can find here
-  - [React Native and Redux](https://www.udemy.com/the-complete-react-native-and-redux-course/): Fantastic tutorial by Stephen Grider which i recommend everyone who want to learn React Native. This course covering all things you need to know to start with RN - installing and setup environment for different OS, begginer and intermediate concepts in RN, testing and debbuging your app...
+  - [React Native and Redux](https://www.udemy.com/the-complete-react-native-and-redux-course/): Fantastic tutorial by Stephen Grider which i recommend to everyone who wants to learn React Native. This course covers all things you need to know to start with RN - installing and setup environment for different OS, beginner and intermediate concepts in RN, testing and debugging your app...
   - [React Native Advanced](https://www.udemy.com/react-native-advanced/): Another tutorial by Stephen Grider, but this time advanced concepts like animations, maps, notifications, navigation and more
-  - For everything else you probably find answer on Google and Stackoverflow.
+  - For everything else you can probably find answer on Google and Stackoverflow.
